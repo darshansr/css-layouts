@@ -1,0 +1,36 @@
+
+/* find the article to understand between display and float  */
+
+/* https://designshack.net/articles/css/whats-the-deal-with-display-inline-block/ */
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+div {
+    background: yellow;
+    border: dashed;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+span{
+    background:blue;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+}
+
+.box{
+    background:brown;
+    width:200px;
+    height:200px;
+    padding:40px;
+    border: 20px solid black;
+    margin:40px;
+}
