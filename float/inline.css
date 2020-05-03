@@ -1,0 +1,38 @@
+
+/* find the article to understand between display and float  */
+
+/* https://designshack.net/articles/css/whats-the-deal-with-display-inline-block/ */
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 800px;
+  margin-bottom: 10px ;
+  border: 2px solid black;
+  /* display: flow-root;
+  overflow:hidden; */
+
+}
+p {
+  background: #CDCDCD;
+  padding: 10px;
+}
+img {
+  float: left;
+  margin: 15px;
+}
+.clear {
+  clear: both; /* clears left and right floats */
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
